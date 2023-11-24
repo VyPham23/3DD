@@ -21,11 +21,11 @@ const cone = new THREE.Mesh(conegeometry, conematerial );
 scene.add( cone );
 
 
-const spheregeometry = new THREE.DodecahedronGeometry( 1, 0 ); 
-const spherematerial = new THREE.MeshBasicMaterial( { color: 0xE5E4E2 } ); 
-const sphere = new THREE.Mesh( spheregeometry, spherematerial ); scene.add( sphere );
-sphere.position.set(-5, 0, 0)
-scene.add( sphere );
+const dodegeometry = new THREE.DodecahedronGeometry( 1, 0 ); 
+const dodematerial = new THREE.MeshBasicMaterial( { color: 0xE5E4E2 } ); 
+const dode = new THREE.Mesh( dodegeometry, dodematerial );
+dode.position.set(-5, 0, 0)
+scene.add( dode );
 
 camera.position.z = 7;
 
@@ -38,8 +38,8 @@ function animate() {
     cone.rotation.x += 0.02;
 	cone.rotation.y += 0.01;
 
-	sphere.rotation.x += 0.01;
-	sphere.rotation.y += 0.01;
+	dode.rotation.x += 0.01;
+	dode.rotation.y += 0.01;
 
 	renderer.render( scene, camera );
 }
